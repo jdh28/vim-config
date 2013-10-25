@@ -196,16 +196,6 @@ nmap <C-Down> <C-E>
 imap <C-Up>   <C-O><C-Y>
 imap <C-Down> <C-O><C-E>
 
-" Tab management
-nmap <C-Tab> :tabnext<CR>
-nmap <CS-Tab> :tabprevious<CR>
-nmap <C-N> :tabnew<CR>
-nmap <C-F4> :tabclose<CR>
-imap <C-Tab> <C-O>:tabnext<CR>
-imap <CS-Tab> <C-O>:tabprevious<CR>
-imap <C-N> <C-O>:tabnew<CR>
-imap <C-F4> <C-O>:tabclose<CR>
-
 " Commentify
 let g:EnhCommentifyUserBindings = 'yes'
 let g:EnhCommentifyPretty = 'yes'
