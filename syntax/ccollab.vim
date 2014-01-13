@@ -14,6 +14,8 @@ syn match ccollabIgnoreFile		"^.*\.resx\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\.Designer\.cs\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\.frx\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\.vbp\(   \)\@="
+syn match ccollabIgnoreFile		"^.*\\\.entries\(   \)\@="
+syn match ccollabIgnoreFile		"^.*\\\.parent\(   \)\@="
 
 hi link ccollabComment		Comment
 hi link ccollabIgnoreFile	Error
