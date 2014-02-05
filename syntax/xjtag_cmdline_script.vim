@@ -30,7 +30,7 @@ hi xjtagscriptBadOutput guifg=LightRed
 hi xjtagscriptOutput guifg=gray50
 hi xjtagscriptInput guifg=White gui=bold
 
-let b:current_syntax = "xjtagscript"
+let b:current_syntax = "xjtag_cmdline_script"
 
 " vim: ts=8 sw=2
 
