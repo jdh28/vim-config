@@ -1,1 +1,1 @@
-set tw=100
+setlocal tw=0
