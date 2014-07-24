@@ -1,5 +1,6 @@
 augroup filetypedetect
 au BufNewFile,BufRead *.bsdl,*.bsd,*.bsm    setf bsdl
+au BufNewFile,BufRead *.csgen               setf cs
 au BufNewFile,BufRead *.xjml                setf xjml
 au BufNewFile,BufRead *.xje,*.xjpm,*.pdd    setf xjease
 au BufNewFile,BufRead *.vbp                 setf vbp
