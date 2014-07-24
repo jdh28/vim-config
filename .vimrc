@@ -31,7 +31,7 @@ set cpoptions-=a
 set bomb
 
 if has("win32")
-	set grepprg=grep\ -nI\ $*\ \\\\|\ sed\ -f\ \"$VIM/vimfiles/grepfilter.sed\"
+	set grepprg=grep\ -nI\ $*\ \\\\|\ sed\ -f\ \"~/vimfiles/grepfilter.sed\"
 else
 	set grepprg=grep\ -nI\ $*\ \\\\|\ sed\ -f\ \"$HOME/.vim/grepfilter.sed\"
 endif
@@ -128,9 +128,9 @@ imap <F7>      <C-O><C-W>}i
 map  <S-F7>    :pclose<CR>
 imap <S-F7>    <C-O>:pclose<CR>
 
-map  <F8>     :grep -r "\<<cword>\>" *<CR>
+map  <F8>     :vimgrep \<<cword>\> *<CR>
 imap <F8>     <ESC><F8>
-map  <S-F8>   :grep -r "<cword>" 
+map  <S-F8>   :vimgrep <cword> 
 imap <S-F8>   <ESC><F8>
 
 map  <F9>     :bufdo\ :up<CR>:make<CR>
