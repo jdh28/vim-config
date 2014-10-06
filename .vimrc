@@ -151,7 +151,7 @@ inoremap <C-Tab> <C-O><C-W>w
 cnoremap <C-Tab> <C-C><C-W>w
 
 " Y yanks to end of line, rather than the whole line (yy)
-map  Y         y$
+map  Y         yg_
 
 " Don't use Ex mode, use Q for formatting
 map  Q         gq
