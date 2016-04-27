@@ -28,7 +28,6 @@ set shortmess=flmnxToOI
 set hlsearch
 set listchars=eol:$,tab:>-
 set cpoptions-=a
-set bomb
 
 if has("win32")
 	set grepprg=grep\ -nI\ $*\ \\\\|\ sed\ -f\ \"~/vimfiles/grepfilter.sed\"
