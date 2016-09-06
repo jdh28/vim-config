@@ -1,4 +1,5 @@
 :1
 delmarks \"
-set wrap
-set linebreak
+setlocal wrap
+setlocal linebreak
+setlocal spell
