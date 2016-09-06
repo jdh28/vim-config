@@ -89,9 +89,6 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
-" In text files, always limit the width of text to 78 characters
-autocmd BufRead *.txt set tw=78
-
 " System include files: always open read-only
 augroup sysincludes
 au!
