@@ -132,7 +132,7 @@ imap <F8>     <ESC><F8>
 map  <S-F8>   :vimgrep <cword> 
 imap <S-F8>   <ESC><F8>
 
-map  <F9>     :bufdo\ :up<CR>:make<CR>
+map  <F9>     :bufdo :update<CR>:make<CR>
 imap  <F9>    <ESC><F9>
 map  <F11>    :cn<CR>zv
 map  <S-F11>  :cp<CR>zv
