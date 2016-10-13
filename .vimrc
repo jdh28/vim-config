@@ -192,6 +192,13 @@ nmap <C-Down> <C-E>
 imap <C-Up>   <C-O><C-Y>
 imap <C-Down> <C-O><C-E>
 
+" Insert GUIDS
+if has("win32")
+imap <silent> <C-G> <C-R>=substitute(system('PrintGuid'), "[\r\n]*$", "", "")<CR>
+nmap <C-G> "=substitute(system('PrintGuid'), "[\r\n]*$", "", "")<CR>P
+endif
+
+
 " Commentify
 let g:EnhCommentifyUserBindings = 'yes'
 let g:EnhCommentifyPretty = 'yes'
