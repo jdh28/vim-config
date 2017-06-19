@@ -208,8 +208,8 @@ nmap <Leader>x <Plug>Traditional
 
 " ---------- Highlighting -------------------------------------------
 
-colors mydarkblue
-"set background=
+set background=dark
+colorscheme solarized
 
 "hi Identifier ctermfg=gray
 "hi Comment    ctermfg=cyan
