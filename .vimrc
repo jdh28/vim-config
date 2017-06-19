@@ -49,10 +49,6 @@ map <S-LeftMouse>     <RightMouse>
 map <S-LeftDrag>      <RightDrag>
 map <S-LeftRelease>   <RightRelease>
 
-" right mouse button behaves as middle button (i.e. pastes)
-map  <RightMouse>     <MiddleMouse>
-imap <RightMouse>     <MiddleMouse>
-
 if has("win32")
 	set shellpipe=\|\ tee
 endif
