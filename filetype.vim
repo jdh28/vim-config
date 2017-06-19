@@ -7,6 +7,7 @@ au BufNewFile,BufRead *.vbp                 setf vbp
 au BufNewFile,BufRead *.wxs,*.wxi,*.targets setf xml
 au BufNewFile,BufRead *.log                 setf log
 au BufNewFile,BufRead *.\(cs\|vc\|wix\)proj setf xml
+au BufNewFile,BufRead .editorconfig         setf editorconfig
 au BufNewFile,BufRead testlist.txt          setf testlist
 au BufNewFile,BufRead TestList.txt          setf testlist
 au BufNewFile,BufRead *.git/worktrees/*/COMMIT_EDITMSG	setf gitcommit
