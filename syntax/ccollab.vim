@@ -16,6 +16,7 @@ syn match ccollabIgnoreFile		"^.*\.frx\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\.vbp\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\\\.entries\(   \)\@="
 syn match ccollabIgnoreFile		"^.*\\\.parent\(   \)\@="
+syn match ccollabIgnoreFile		"^.*\\\packages.config\(   \)\@="
 
 hi link ccollabComment		Comment
 hi link ccollabIgnoreFile	Error
