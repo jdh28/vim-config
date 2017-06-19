@@ -8,5 +8,6 @@ vmap <Leader>s c<span class=""></span><ESC>6hP`[2hi
 
 setlocal makeprg=msbuild\ /nologo\ /v:q\ /t:Check\ \\\|\ sed\ -e\ \"s/\[.*\]$//\"
 setlocal errorformat=%f(%l):\ warning\ :\ %m,%f(%l):\ error\ :\ %m
+setlocal spell
 
 runtime textedit.vim
