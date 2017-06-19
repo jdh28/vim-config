@@ -1,6 +1,6 @@
 runtime! syntax/html.vim
 
-syn keyword xjmlTagName contained doc folder idx addfile include merge
+syn keyword xjmlTagName contained help doc folder idx include merge
 syn cluster htmlTagNameCluster add=xjmlTagName
 
 
