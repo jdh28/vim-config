@@ -29,6 +29,12 @@ set hlsearch
 set listchars=eol:$,tab:>-
 set cpoptions-=a
 
+let s:swapdir = '~/.vimswap'
+execute 'set directory=' . s:swapdir . '//'
+if !isdirectory(expand(s:swapdir))
+	call mkdir(expand(s:swapdir))
+endif
+
 if has("win32")
 	set grepprg=grep\ -nI\ $*\ \\\\|\ sed\ -f\ \"~/vimfiles/grepfilter.sed\"
 else
