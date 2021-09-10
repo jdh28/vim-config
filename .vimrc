@@ -126,7 +126,7 @@ imap <F7>      <C-O><C-W>}i
 map  <S-F7>    :pclose<CR>
 imap <S-F7>    <C-O>:pclose<CR>
 
-map  <F8>     :vimgrep \<<cword>\> *<CR>
+map  <F8>     :vimgrep <cword> *<CR>
 imap <F8>     <ESC><F8>
 map  <S-F8>   :vimgrep <cword> 
 imap <S-F8>   <ESC><F8>
