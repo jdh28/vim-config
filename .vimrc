@@ -132,12 +132,15 @@ map  <S-F8>   :vimgrep <cword>
 imap <S-F8>   <ESC><F8>
 
 map  <F9>     :bufdo :update<CR>:make<CR>
-imap  <F9>    <ESC><F9>
+imap <F9>     <ESC><F9>
 map  <F11>    :cn<CR>zv
 map  <S-F11>  :cp<CR>zv
 map  <F12>    :crewind<CR>
 
 inoremap <C-space> <C-N>
+" make Ctrl+- work like Ctrl+T (vim terminal strangeness means we specify it
+" as <C-_> rather than <C-->
+map <C-_> <C-T>
 
 " Alt+] displays tag in preview window
 map <M-]> :exe "silent! ptag " . expand("<cword>")<CR>
@@ -168,11 +171,24 @@ endf
 
 " windows style navigation
 imap <C-Del>   <C-O>:call Windows_C_Del()<CR>
-imap <C-BS>    <C-W>
+if !has("win32") || has("gui_running")
+	imap <C-BS> <C-W>
+else
+	" windows terminal is currently broken and sends C-BS as CS-C
+	imap <CS-C> <C-W>
+endif
 map  <C-Left>  b
 map  <C-Right> w
 imap <C-Left>  <C-O>b
 imap <C-Right> <C-O>w
+
+" Cursor in Windows Terminal
+if has("win32") && !has("gui_running")
+	let &t_ti.="\e[5 q"
+	let &t_SI.="\e[5 q"
+	let &t_EI.="\e[1 q"
+	let &t_te.="\e[0 q"
+endif
 
 " Smart home key
 fun! s:SmartHome()
@@ -210,12 +226,19 @@ vmap <Leader>x <Plug>VisualTraditional
 nmap <Leader>x <Plug>Traditional
 
 " Insert copyright
-:imap <CS-C> John Hall <john.hall@xjtag.com><CR>Copyright (c) Midas Yellow Ltd. All rights reserved.<CR>
+if !has("win32") || has("gui_running")
+	:imap <CS-C> John Hall <john.hall@xjtag.com><CR>Copyright (c) Midas Yellow Ltd. All rights reserved.<CR>
+endif
 
 " ---------- Highlighting -------------------------------------------
 
-set background=dark
-colorscheme solarized
+if has('gui_running')
+	set background=dark
+	colorscheme solarized
+else
+	highlight Normal ctermbg=5
+	colorscheme default
+endif
 
 "hi Identifier ctermfg=gray
 "hi Comment    ctermfg=cyan
