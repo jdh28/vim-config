@@ -59,7 +59,7 @@ if has("win32")
 	set shellpipe=\|\ tee
 endif
 
-let mapleader = ','
+let mapleader = ' '
 
 " ---------- CVS plugin ----------------------------------------------
 
