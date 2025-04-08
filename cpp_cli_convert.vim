@@ -7,9 +7,17 @@
 %s/\<auto\>/var/ge
 %s/\<array<\([^>]\+\)>/\1[]/ge
 %s/\<initonly\>/readonly/e
+%s/\<literal\>/const/e
 %s/\<property\> //e
 %s/\<Object\> /object /ge
 %s/\<unsigned int\>/uint/ge
+%s/\<UINT32\>/uint/ge
+%s/\<UINT16\>/ushort/ge
+%s/\<UINT8\>/byte/ge
+%s/\<UInt32\>/uint/ge
+%s/\<UInt16\>/ushort/ge
+%s/\<Byte\>/byte/ge
+%s/\<wchar_t\>/char/ge
 %s/\<BOOL\>/bool/ge
 %s/\<TRUE\>/true/ge
 %s/\<FALSE\>/false/ge
