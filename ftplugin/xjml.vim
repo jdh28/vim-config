@@ -12,3 +12,4 @@ setlocal errorformat=%f(%l):\ warning\ :\ %m,%f(%l):\ error\ :\ %m
 setlocal spell
 
 runtime textedit.vim
+set tabstop=2 shiftwidth=2 expandtab
