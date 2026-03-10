@@ -6,7 +6,7 @@ au BufNewFile,BufRead *.xje,*.xjpm,*.pdd    setf xjease
 au BufNewFile,BufRead *.vbp                 setf vbp
 au BufNewFile,BufRead *.wxs,*.wxi           setf xml
 au BufNewFile,BufRead *.props,*.targets     setf xml
-au BufNewFile,BufRead *.log                 setf log
+au BufNewFile,BufRead *.log                 setf txt
 au BufNewFile,BufRead *.\(cs\|vc\|wix\)proj setf xml
 au BufNewFile,BufRead .editorconfig         setf editorconfig
 au BufNewFile,BufRead testlist.txt          setf testlist
