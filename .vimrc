@@ -115,7 +115,7 @@ map  <F3>      :set invlist<CR>
 imap <F4>      <C-O>:set invhls<CR>
 map  <F4>      :set invhls<CR>
 imap <F5>      <ESC><F5>
-map  <F5>      :new<CR>:only<CR>"*P:set ft=mail<CR>1G
+map  <F5>      :new<CR>:only<CR>"*P1G
 imap <S-F5>    <ESC><S-F5>
 map  <S-F5>    :new<CR>:only<CR>"*P:runtime formatmail.vim<CR>
 imap <C-F5>    <ESC><C-F5>
